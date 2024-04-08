@@ -47,7 +47,7 @@
     <h2>Currency Converter ($ to £)</h2> 
     <img src="https://66.media.tumblr.com/tumblr_macxafxGz21rfjowdo1_500.gif"> <br>
     <input type="text" id="noInput">
-    <button onclick="storeInput()">Convert to Pounds</button><br>
+    <button onclick="storeInput()">Convert to Pounds</button><br> <!--Make the input into a variable-->
     <p id="noOutput"></p>
     <h4>Other Converters</h4> <br>
     <a href="page3.html"><button>Dollar to Yen</button></a> <br>
@@ -55,9 +55,9 @@
     <script>
         var pound = 0.79
        function storeInput() {
-        var noinput = document.getElementById("noInput").value;
-        var nooutput = document.getElementById("noOutput");
-        nooutput.textContent = noinput + " Dollar is equivalent to " + noinput*pound + " Pound!";
+        var noinput = document.getElementById("noInput").value; // Value of input-ed (idk the word) number in the form element
+        var nooutput = document.getElementById("noOutput"); // the output
+        nooutput.textContent = noinput + " Dollar is equivalent to " + noinput*pound + " Pound!"; // the text
        }
     </script>
     </div>
