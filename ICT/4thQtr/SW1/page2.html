@@ -47,7 +47,7 @@
     <h2>Currency Converter ($ to ₱)</h2> 
     <img src="https://66.media.tumblr.com/tumblr_macxafxGz21rfjowdo1_500.gif"> <br>
     <input type="text" id="noInput">
-    <button onclick="storeInput()">Convert to Pesos</button><br>
+    <button onclick="storeInput()">Convert to Pesos</button><br> <!--Make the input into a variable-->
     <p id="noOutput"></p>
     <h4>Other Converters</h4> <br>
     <a href="page3.html"><button>Dollar to Yen</button></a> <br>
@@ -55,9 +55,9 @@
     <script>
         var peso = 56.5
        function storeInput() {
-        var noinput = document.getElementById("noInput").value;
-        var nooutput = document.getElementById("noOutput");
-        nooutput.textContent = noinput + " Dollar is equivalent to " + noinput*peso + " Peso!";
+        var noinput = document.getElementById("noInput").value; // value of number that is input-ted
+        var nooutput = document.getElementById("noOutput"); // output
+        nooutput.textContent = noinput + " Dollar is equivalent to " + noinput*peso + " Peso!"; // text of calculated output
        }
     </script>
     </div>
