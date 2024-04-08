@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body {
-            background-image: url(https://c4.wallpaperflare.com/wallpaper/503/189/157/pokemon-video-games-pixel-art-pixels-wallpaper-preview.jpg);
+            background-image: url(https://c4.wallpaperflare.com/wallpaper/675/208/1000/pokemon-video-games-pixel-art-pixels-wallpaper-preview.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -25,7 +25,7 @@
             margin: auto;
             padding: 40px;
             margin-top: 150px;
-            background-color: rgb(62, 173, 69);
+            background-color: rgb(102, 104, 29);
             border: 6px solid white;
             border-radius: 20px;
         }
@@ -34,7 +34,7 @@
         }
         input, button {
             border-radius: 20px;
-            background-color: rgb(22, 62, 25);
+            background-color: rgb(53, 54, 16);
             color: white;
             margin-bottom: 10px;
             padding: 5px;
@@ -44,20 +44,20 @@
 </head>
 <body>
     <div class="center">
-    <h2>Currency Converter ($ to £)</h2> 
+    <h2>Currency Converter ($ to ₱)</h2> 
     <img src="https://66.media.tumblr.com/tumblr_macxafxGz21rfjowdo1_500.gif"> <br>
     <input type="text" id="noInput">
-    <button onclick="storeInput()">Convert to Pounds</button><br>
+    <button onclick="storeInput()">Convert to Pesos</button><br>
     <p id="noOutput"></p>
     <h4>Other Converters</h4> <br>
     <a href="page3.html"><button>Dollar to Yen</button></a> <br>
-    <a href="page2.html"><button>Dollar to Pesos</button></a>
+    <a href="index.html"><button>Dollar to Pounds</button></a>
     <script>
-        var pound = 0.79
+        var peso = 56.5
        function storeInput() {
         var noinput = document.getElementById("noInput").value;
         var nooutput = document.getElementById("noOutput");
-        nooutput.textContent = noinput + " Dollar is equivalent to " + noinput*pound + " Pound!";
+        nooutput.textContent = noinput + " Dollar is equivalent to " + noinput*peso + " Peso!";
        }
     </script>
     </div>
